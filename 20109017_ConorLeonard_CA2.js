@@ -30,20 +30,6 @@
 
 // Establish database, file output options and take user input
 
-const { MongoClient } = require('mongodb');
-const fs = require('fs');
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-// MongoDB Atlas connection
-const uri = "mongodb+srv://Cluster53292:Tk5lclVaRlFi@cluster53292.1mfur.mongodb.net/";
-// const uri = "mongodb://localhost:27017"; // Default for local instance
-const database = '20109017_CA2';
-const collectionName = 'Movies';
 
 // MongoDB client instance
 const client = new MongoClient(uri);
