@@ -7,14 +7,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-// MongoDB connection URI and database/collection details
-const uri = "mongodb+srv://Cluster53292:Tk5lclVaRlFi@cluster53292.1mfur.mongodb.net/";
-const database = '20109017_CA2';
-const collectionName = 'Movies';
 
-// MongoDB client instance
-const client = new MongoClient(uri);
-let collection;
 
 // Menus
 const mainMenu = `
